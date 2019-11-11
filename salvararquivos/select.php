@@ -1,9 +1,9 @@
 <?php
-    include('conn.php');
+
+    include('conecta.php');
 
     $sql = "SELECT * FROM Pessoas";
-    $resultado = $conn->query($sql);
-
+    $resultado = $conecta->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@
         border: 2px solid black;
         border-collapse: collapse;
     }
-    tr, th{
+    td, th{
             padding: 5px;
     }
     th{
@@ -31,18 +31,17 @@
 
     <h1>Pessoas cadastradas</h1>
     <table>
-    <tr>
-        <th>Nome</th>
-        <th>Sobrenome</th>
-        <th>Nascimento</th>
-        <th>Ação</th>
-    </tr>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Foto</th>
+            <th>Ação</th>
+        </tr>
         <?php include('criarlinha.php')?>
     </table>
-    
 </body>
 </html>
 
-<?php
-    $conn->close();
+<?php 
+    $conecta->close();
 ?>
