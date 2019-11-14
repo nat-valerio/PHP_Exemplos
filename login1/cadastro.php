@@ -15,7 +15,7 @@
             <form action="salvar.php" method="post">
                 <div>
                     <label for="username">Usuário: </label>
-                    <input type="text" name="user" id="username">
+                    <input type="text" name="username" id="username">
                 </div>
 
                 <div>
