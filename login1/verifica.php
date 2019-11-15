@@ -19,9 +19,9 @@
             header('Location: index.php');
         }
         else{
-            echo "Usuário ou senha inválida";
+            echo "Usuário ou senha inválido";
         }
     }
     else{
-        echo "Usuario ou senha inválidos";
+        echo "Usuario ou senha inválido";
     }
